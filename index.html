@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&family=Raleway&display=swap"
+        rel="stylesheet">
+    <title>manage</title>
+</head>
+
+<body class=" font-sans overflow-x-hidden ">
+    <!-- navbar -->
+    <nav class="nav mx-auto p-3 bg-background/75 fixed t-0 z-10 w-full">
+        <!-- flex container  -->
+        <div class="flex items-center justify-between ">
+
+            <!-- menu items -->
+            <div
+                class="mx-auto uppercase md:flex md:space-x-10 md:items-center lg:items-center xl:items-center text-darkWhite">
+                <a href="#about" class="hover:text-goldenYellow hidden lg:flex md:ml-10">O nás</a>
+                <a href="#pricing" class="hover:text-goldenYellow hidden lg:flex">Ceník</a>
+                <!-- logo -->
+                <div class="flex items-center">
+                    <img class="w-16 h-16 mx-auto" src="img/logo.webp" alt="" id="logo">
+                </div>
+                <a href="#galery" class="hover:text-goldenYellow hidden lg:flex">Galerie</a>
+                <a href="#contact" class="hover:text-goldenYellow hidden lg:flex">Kontakt</a>
+            </div>
+            <!-- hamburger button -->
+            <button id="menu-btn" class="z-30 block lg:hidden focus:outline-none hamburger background-darkWhite">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+
+            </button>
+        </div>
+        <!-- mobile menu -->
+        <div class="fixed inset-0 z-20 hidden flex-col items-center self-start w-full h-full m-h-screen px-5 py-1 pt-24 pb-4 tracking-widest text-white uppercase opacity-90 bg-background divide-y divide-gray-500 mx-auto"
+            id="menu">
+
+            <div class="w-full py-3 text-center">
+                <a href="#about" class="block hover:text-goldenYellow">O nás</a>
+            </div>
+            <div class="w-full py-3 text-center">
+                <a href="#pricing" class="block hover:text-goldenYellow">Ceník</a>
+            </div>
+            <div class="w-full py-3 text-center">
+                <a href="#galery" class="block hover:text-goldenYellow">Galerie</a>
+            </div>
+            <div class="w-full py-3 text-center">
+                <a href="#contact" class="block hover:text-goldenYellow">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero start -->
+    <section id="about">
+        <div class="md:hidden flex flex-col items-center max-h-88 bg-lightBlack pt-28">
+            <div class="text-white mt:3 text-center">
+                <h4 class="text-xs mt-2 md:mt-8 text-goldenYellow">ODBORNÍCI S BŘITVOU V RUCE</h4c>
+                    <h1 class="text-4xl font-bold mb-4 md:text-7xl ">BARBERSHOP PEPE</h1>
+                    <hr class="h-1 bg-goldenYellow w-24 mx-auto">
+                    <p class="p-8 md:w-1/2 md:mx-auto">Panský salon je místem, kde se setkávají opravdové chlapi a
+                        chlapci,
+                        kteří si chtějí
+                        užit dokonalou
+                        péčí o svůj zevnějšek. U nás si odpočinete, pokecáte, proberete nejrůznější témata nebo si v
+                        klidu
+                        přečtěte noviny. Dále Vám můžeme nabídnout výtečnou kávu nebo sklenku něčeho tvrdšího.</p>
+            </div>
+        </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- carousel start-->
+    <section id="hero">
+        <div class="carousel hidden md:block pt-28 max-h-88 items-center bg-lightBlack md:max-w-[1440px]  mx-auto">
+            <div class="carousel_inner">
+                <div class="carousel_item carousel_item__active">
+                    <img src="img/barber1 (1) (1).png" alt="" class="carousel_img ">
+                </div>
+                <div class="carousel_caption text-center">
+                    <p class="carousel_subtitle text-base mt-7 text-goldenYellow md:text-md pt-5">ODBORNÍCI S BŘITVOU V
+                        RUCE
+                    </p>
+                    <h1 class="carousel_title text-7xl mb-4 md:text-6xl">BARBERSHOP PEPE
+                    </h1>
+                    <hr class="carousel_hr h-1 border-t-2 border-goldenYellow w-32 mx-auto ">
+                    <p class="carousel_history p-8 md:w-2/3 md:mx-auto">Panský salon je místem, kde se setkávají
+                        opravdové chlapi a chlapci,
+                        kteří si
+                        chtějí užit
+                        dokonalou péčí
+                        o svůj zevnějšek. U nás si odpočinete, pokecáte, proberete nejrůznější témata nebo si v
+                        klidu
+                        přečtěte
+                        noviny. Dále Vám můžeme nabídnout výtečnou kávu nebo sklenku něčeho tvrdšího.</p>
+                </div>
+                <div class="carousel_item ">
+                    <img src="img/barber2ss.png" alt="" class="carousel_img">
+                </div>
+                <div class="carousel_caption text-white text-center">
+                    <p class="carousel_subtitle text-xs mt-7 text-goldenYellow md:text-md pt-5">ODBORNÍCI S BŘITVOU V
+                        RUCE
+                    </p>
+                    <h1 class="carousel_title text-4xl mb-4 md:text-6xl">BARBERSHOP PEPE
+                    </h1>
+                    <hr class="carousel_hr h-1 border-t-2 border-goldenYellow w-32 mx-auto">
+                    <p class="carousel_history p-8 md:w-2/3 md:mx-auto">Panský salon je místem, kde se setkávají
+                        opravdové chlapi a chlapci,
+                        kteří si
+                        chtějí užit
+                        dokonalou péčí
+                        o svůj zevnějšek. U nás si odpočinete, pokecáte, proberete nejrůznější témata nebo si v
+                        klidu
+                        přečtěte
+                        noviny. Dále Vám můžeme nabídnout výtečnou kávu nebo sklenku něčeho tvrdšího.
+                    <div class="carousel_item ">
+                        <img src="img/watches.png" alt="" class="carousel_img">
+                    </div>
+                    <div class="carousel_caption text-white text-center">
+                        <p class="carousel_subtitle text-xs mt-7 text-goldenYellow md:text-md pt-5">ODBORNÍCI S BŘITVOU
+                            V
+                            RUCE
+                        </p>
+                        <h1 class="carousel_title text-4xl mb-4 md:text-6xl">BARBERSHOP PEPE
+                        </h1>
+                        <hr class="carousel_hr h-1 border-t-2 border-goldenYellow w-32 mx-auto">
+                        <p class="carousel_history p-8 md:w-2/3 md:mx-auto">Panský salon je místem, kde se setkávají
+                            opravdové chlapi a chlapci,
+                            kteří si
+                            chtějí užit
+                            dokonalou péčí
+                            o svůj zevnějšek. U nás si odpočinete, pokecáte, proberete nejrůznější témata nebo si v
+                            klidu
+                            přečtěte
+                            noviny. Dále Vám můžeme nabídnout výtečnou kávu nebo sklenku něčeho tvrdšího.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- carousel end -->
+
+
+    <!-- price section -->
+    <section id="pricing" class="mt-10 max-w-4xl md:max-w-xl lg:max-w-3xl xl:max-w-4xl mx-auto py-7 px-5 md:pt-24">
+        <div class="flex flex-col md:flex-row gap-5 items-center justify-center">
+            <div class="hidden lg:block relative bg-background border-2 border-goldenYellow h-[416px]">
+
+                <div class="w-96 h-[412px] overflow-hidden inline-block">
+                    <div class="bg-cover bg-center bg-goldenYellow -rotate-45 transform origin-bottom-right"
+                        style=" width: 50%; height: 100%"></div>
+                    <img src="img/agustin-fernandez-1Pmp9uxK8X8-unsplash.png" alt="Your Image"
+                        class=" 	 absolute inset-0 w-full h-full object-cover p-2" />
+                </div>
+            </div>
+            <div class="container flex flex-col bg-lightBlack space-y-3  px-9 py-6 mx-auto">
+                <h1 class="text-center text-3xl font-bold text-goldenYellow">CENÍK
+                </h1>
+                <div class="container flex flex-row justify-between">
+                    <div class="text-xl text-darkWhite">Střih </div>
+                    <div class="text-xl text-darkWhite ">450 Kč</div>
+                </div>
+                <hr class="w-full h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
+                <div class="container flex flex-row justify-between">
+                    <div class="text-xl text-darkWhite">Střih strojkem</div>
+                    <div class="text-xl text-darkWhite ">650 Kč</div>
+                </div>
+                <hr class="w-full h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
+                <div class="container flex flex-row justify-between">
+                    <div class="text-xl text-darkWhite">Barvení vousů</div>
+                    <div class="text-xl text-darkWhite ">650 Kč</div>
+                </div>
+                <hr class="w-full h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
+                <div class="container flex flex-row justify-between">
+                    <div class="text-xl text-darkWhite">Vousy "Hot Towel"</div>
+                    <div class="text-xl text-darkWhite ">750 Kč</div>
+                </div>
+                <hr class="w-full h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
+                <div class="container flex flex-row justify-between">
+                    <div class="text-xl text-darkWhite">Vousy "Hot Towel"</div>
+                    <div class="text-xl text-darkWhite ">750 Kč</div>
+                </div>
+                <hr class="w-full h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
+                <div class="container flex flex-row justify-between">
+                    <div class="text-xl text-darkWhite">Vousy "Hot Towel"</div>
+                    <div class="text-xl text-darkWhite ">750 Kč</div>
+                </div>
+                <hr class="w-full h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
+
+            </div>
+        </div>
+    </section>
+    <!-- price section -->
+
+    <!-- gallery section -->
+    <section id="galery">
+        <div class="hidden lg:block md:mx-auto md:my-20 xl:mx-auto md:max-w-3xl">
+            <h1 class="text-center text-3xl font-bold text-goldenYellow">GALERIE
+            </h1>
+            <div class="columns-2 md:columns-3 lg:columns-3 p-2 border-2 border-goldenYellow">
+                <div class="blur-load bg-cover bg-center bg-[url('/img/hair1.jpg')] relative pb-4  w-96 h-96">
+                    <img class="img-load object-center object-cover w-full" src="/img/hair.jpg" loading="lazy">
+                </div>
+
+                <div
+                    class="relative pb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full " src="img/andrea-donato-vuON347SuzE-unsplash.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+                    </div>
+                </div>
+
+                <div
+                    class="relative before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full" src="img/andrea-donato-MNu0n-3BIKs-unsplash.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative pb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full " src="img/hai-phung-m4Pd_e-4zKs-unsplash.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative pb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full " src="img/allef-vinicius-IvQeAVeJULw-unsplash.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+
+                    </div>
+                </div>
+                <div
+                    class="relative before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full " src="img/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+
+                    </div>
+                </div>
+
+
+                <div
+                    class="relative pb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full " src="img/jason.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative pb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full " src="img/allef-vinicius-IvQeAVeJULw-unsplash.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+
+                    </div>
+                </div>
+                <div
+                    class="relative pb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                    <img class="w-full " src="img/hai-phung-m4Pd_e-4zKs-unsplash.jpg" loading="lazy">
+                    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- gallery section -->
+
+
+    <!-- Image grid -->
+    <section class="lg:hidden px-5 pt-20  md:px-14">
+        <h1 class="text-center text-3xl font-bold text-goldenYellow">GALERIE
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-2 border-2 border-goldenYellow p-3">
+                <img class="w-full h-full object-cover cursor-pointer" src="img/hair.jpg" alt=""
+                    onclick="showModal('img/hair.jpg')" />
+                <img class="w-full h-full object-cover cursor-pointer" src="img/hai-phung-m4Pd_e-4zKs-unsplash.jpg"
+                    alt="" onclick="showModal('img/hai-phung-m4Pd_e-4zKs-unsplash.jpg')" />
+                <img class="w-full h-full object-cover cursor-pointer" src="img/allef-vinicius-IvQeAVeJULw-unsplash.jpg"
+                    alt="" onclick="showModal('img/allef-vinicius-IvQeAVeJULw-unsplash.jpg')" />
+                <img class="w-full h-full object-cover cursor-pointer"
+                    src="img/kamile-leonaviciute-wKo5Rzv0_aM-unsplash.jpg" alt=""
+                    onclick="showModal('img/kamile-leonaviciute-wKo5Rzv0_aM-unsplash.jpg')" />
+            </div>
+        </h1>
+    </section>
+    <!-- The Modal -->
+    <div id="modal"
+        class="hidden fixed top-0 left-0 z-50 w-screen h-screen bg-black/70 flex justify-center items-center"
+        onclick="closeModal()">
+        <!-- The close button -->
+        <!-- <a class="fixed z-999 top-13 right-8 text-white text-5xl font-bold" href="javascript:void(0)"
+            onclick="closeModal()">&times;</a> -->
+        <!-- A big image will be displayed here -->
+        <img id="modal-img" class="max-w-[610px] max-h-[600px] object-cover px-32 md:px-20 lg:" />
+    </div>
+
+
+
+
+    <!--  contact form  -->
+    <div id="contact" class="container py-5 mx-auto md:px-6">
+        <section class="my-20 md:mb-16 bg-lightBlack max-w-3xl mx-auto">
+
+            <div class="flex flex-col md:flex-row">
+                <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12  ">
+                    <img class="hidden md:block w-full h-full object-cover" src=" img/glass.jpg" alt="">
+                </div>
+                <div class="mb-5 w-full shrink-0 grow-0 px-12 basis-auto md:mb-0 md:w-6/12 md:p-4 lg:px-6">
+                    <h1 class="mb-5 text-center text-2xl font-bold text-darkWhite">KONTAKTUJ NÁS
+                    </h1>
+                    <form>
+                        <div class="relative mb-6" data-te-input-wrapper-init>
+
+                            <input type="text"
+                                class=" peer block min-h-[auto] w-full rounded-full border-0 bg-white py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-300 dark:placeholder:text-slate-500 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                placeholder="Name" />
+                            <label
+                                class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-slate-400 dark:peer-focus:text-primary">Jméno
+                            </label>
+                        </div>
+                        <div class="relative mb-6" data-te-input-wrapper-init>
+                            <input type="email"
+                                class="peer block min-h-[auto] w-full rounded-full border-0 bg-white py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-100 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                placeholder="Email address" />
+                            <label
+                                class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-slate-400 dark:peer-focus:text-primary" ">Telefon
+                            </label>
+                        </div>
+                        <div class=" relative mb-6" data-te-input-wrapper-init>
+                                <textarea
+                                    class="peer block min-h-[auto] w-full rounded-lg border-0 bg-white py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                    rows="4" placeholder="Your message"></textarea>
+                                <label
+                                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-slate-400 dark:peer-focus:text-primary">Zpráva</label>
+                        </div>
+
+                        <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                            class="mb-6 inline-block w-full rounded-full bg-goldenYellow px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal dark:text-slate-600 transition duration-150 ease-in-out hover:scale-105">
+                            ODESLAT
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- contact form  -->
+
+    <!-- section contact -->
+    <section class="bg-goldenYellow w-screen">
+        <!-- full container -->
+        <div class="flex flex-col md:flex-row mx-auto max-w-3xl  bg-goldenYellow">
+            <!-- left container -->
+            <div class="mx-auto my-5"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.945072300946!2d14.029218376569998!3d50.66528037163407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470984b31faa30d9%3A0x5e73f29ce1627c03!2zTG9uZMO9bnNrw6EgMTg3NS8xLCA0MDAgMDEgw5pzdMOtIG5hZCBMYWJlbS1txJtzdG8!5e0!3m2!1scs!2scz!4v1693588863555!5m2!1scs!2scz"
+                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- right container -->
+            <div class="flex flex-1 md:mt-5">
+                <!-- wrap to left and right side -->
+                <div class="flex flex-wrap mx-28 items-center">
+                    <!-- icon -->
+                    <div class="w-1/3 mb-4 pl-1">
+                        <img class="w-7 h-7" src=" img/contact-pin-location-svgrepo-com.svg " alt="">
+                    </div>
+                    <!-- content -->
+                    <div class="w-2/3 mb-4">
+                        <p>Barber Shop Pepe</p>
+                        <p class="text-xs">Londýnska 1875/1,</p>
+                        <p class="text-xs">Ústí nad Labem 400 01</p>
+                    </div>
+                    <!-- icon -->
+                    <div class="w-1/3 mb-4 pl-1">
+                        <img class="w-7 h-7" src="img/contact-phone-talking-svgrepo-com.svg" alt="">
+                    </div>
+                    <!-- content -->
+                    <div class="w-2/3 mb-4">
+                        <p>+420 607 942 500</p>
+                    </div>
+                    <!-- icon -->
+                    <div class="w-1/3 mb-4 pl-1">
+                        <img class="w-7 h-7" src="img/contact-email-mail-svgrepo-com.svg" alt="">
+                    </div>
+                    <!-- content -->
+                    <div class="w-2/3 mb-4">
+                        <p>sirbazar@seznam.cz</p>
+                    </div>
+                    <!-- icon -->
+                    <div class="w-1/3 mb-4 pl-1">
+                        <img class="w-7 h-7" src="img/contact-writing-write-svgrepo-com.svg" alt="">
+                    </div>
+                    <!-- content -->
+                    <div class="w-2/3 mb-4">
+                        <p>Otevírací doba</p>
+                        <p class="text-xs">Po-So: 09:00-21:00</p>
+                        <p class="text-xs">Ne: Zavřeno</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- section contact end -->
+
+
+
+
+    <section>
+        <div class=" blur-load bg-cover bg-center bg-[url('/img/hair1.jpg')] w-96 h-96">
+            <img src="/img/hair.jpg" alt="" loading="lazy" class="img-load object-center object-cover z-100 w-96 h-96">
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p class="bg-background p-7 text-xs text-darkWhite text-center">© 2023 Webgroo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to show the modal
+        function showModal(imageSrc) {
+            var modal = document.getElementById('modal');
+            var modalImg = document.getElementById('modal-img');
+            modalImg.src = imageSrc;
+            modal.style.display = 'block';
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+
+        // Add an event listener to the entire document to close the modal when clicking outside it
+        document.addEventListener('click', function (event) {
+            var modal = document.getElementById('modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Get the modal by id
+        var modal = document.getElementById("modal");
+
+        // Get the modal image tag
+        var modalImg = document.getElementById("modal-img");
+
+        // this function is called when a small image is clicked
+        function showModal(src) {
+            modal.classList.remove('hidden');
+            modalImg.src = src;
+        }
+
+        // this function is called when the close button is clicked
+        function closeModal() {
+            modal.classList.add('hidden');
+        }
+
+        // hamburger menu
+        const btn = document.getElementById('menu-btn')
+        const menu = document.getElementById('menu')
+        const logo = document.getElementById('logo')
+
+
+        // hamburger button listener
+        btn.addEventListener('click', navToggle)
+
+        function navToggle() {
+            btn.classList.toggle('open')
+            menu.classList.toggle('flex')
+            menu.classList.toggle('hidden')
+
+        }
+
+
+
+        // carousel start
+        window.addEventListener("load", () => {
+            autoSlide();
+        });
+
+        function autoSlide() {
+            setInterval(() => {
+                slide(getItemActiveIndex() + 1);
+            }, 5000); // slide speed = 3s
+        }
+
+        function slide(toIndex) {
+            const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
+            const itemActive = document.querySelector(".carousel_item__active");
+
+            // check if toIndex exceeds the number of carousel items
+            if (toIndex >= itemsArray.length) {
+                toIndex = 0;
+            }
+
+            const newItemActive = itemsArray[toIndex];
+
+            // start transition
+            newItemActive.classList.add("carousel_item__pos_next");
+            setTimeout(() => {
+                newItemActive.classList.add("carousel_item__next");
+                itemActive.classList.add("carousel_item__next");
+            }, 400);
+
+            // remove all transition class and switch active class
+            newItemActive.addEventListener(
+                "transitionend",
+                () => {
+                    itemActive.className = "carousel_item";
+                    newItemActive.className = "carousel_item carousel_item__active";
+                },
+                {
+                    once: true,
+                }
+            );
+        }
+
+        // function getItemActiveIndex() {
+        //     const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
+        //     const itemActive = document.querySelector(".carousel_item__active");
+        //     const itemActiveIndex = itemsArray.indexOf(itemActive);
+        //     return itemActiveIndex;
+        // }
+
+        // carousel end
+
+        // load image start
+        const blurDivs = document.querySelectorAll(".blur-load")
+        blurDivs.forEach(div => {
+            const img = div.querySelector(".img-load")
+
+            function loaded() {
+                div.classList.add("loaded")
+            }
+
+            if (img.complete) {
+                loaded()
+            } else {
+                img.addEventListener("load", loaded)
+            }
+        })
+        // load image end
+
+        // smooth scroll start
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth",
+                    });
+                });
+            });
+        });
+
+// smooth scroll end
+    </script>
+
+
+</body>
+
+</html>
